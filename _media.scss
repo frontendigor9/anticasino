@@ -1,0 +1,335 @@
+@media (max-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .main {
+        &__container {
+            justify-content: center;
+        }
+
+        .news {
+            padding: 0 16px;
+        }
+    }
+
+
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .header {
+        position: relative;
+
+        &__buttons {
+
+
+            &.active {
+                position: fixed;
+                display: flex;
+                // flex-direction: column;
+                justify-content: center;
+                bottom: 16px;
+                left: 30%;
+                z-index: 16;
+
+            }
+        }
+
+        &__logo {
+            margin: 0;
+        }
+
+        &__buttons_link {
+            font-size: 16px;
+        }
+
+
+
+        .menu {
+            display: block;
+            position: absolute;
+            top: -100vh;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: all 0.2s;
+
+            &.active {
+                top: 0;
+                display: flex;
+                justify-content: center;
+                z-index: 20;
+            }
+
+            &__list {
+                list-style-type: none;
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+
+            a {
+                font-size: 32px;
+
+            }
+        }
+
+
+
+        nav {
+            width: 100%;
+            transition: transform .5s, visibility .5s;
+            will-change: transform;
+
+            &__item {
+                width: 280px;
+                text-align: center;
+            }
+        }
+    }
+
+    .header__menu_button {
+        display: block;
+        z-index: 20;
+        position: absolute;
+        right: 20px;
+
+        &.active {
+            span {
+                &:nth-child(1) {
+                    transform: translateY(0) rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: translateX(-50px);
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(0) rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    .news {
+        &.mySwiper {
+            width: 768px;
+        }
+    }
+
+    .arrivals {
+        &__wrapper {
+            width: 768px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 480px;
+    }
+
+    .header {
+        &__buttons {
+            display: none;
+        }
+
+
+    }
+
+    .header__menu_button {
+        display: block;
+        z-index: 20;
+        position: absolute;
+        right: 0;
+    }
+
+
+    .main {
+        & .news {
+            width: 480px;
+
+            &__item {
+                &_title {
+                    max-width: 415px;
+                    margin-top: 32px;
+                }
+
+                &_descr {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+
+                &_img {
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .law {
+            width: 480px;
+
+            .movement {
+                width: 480px;
+
+                &__form {
+                    width: 480px;
+                }
+
+                &__input {
+                    width: 400px;
+                }
+
+                &__btn {
+                    width: 400px;
+
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    .swiper-slider {
+        & img {
+            width: 100%;
+        }
+    }
+
+    .arrivals {
+        &__wrapper {
+            width: 480px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .header {
+        height: 75px;
+
+        & .menu {
+            &.active {
+
+                z-index: 20;
+
+            }
+        }
+
+        & .menu+.active {
+
+            z-index: 20;
+
+        }
+
+        &__logo {
+            width: 96px;
+            height: 100px;
+            padding: 6px;
+
+            & svg {
+                width: 100%;
+            }
+        }
+
+        &__menu_button {
+            top: 29px;
+        }
+
+        .menu__list {
+            padding-top: 100px;
+            justify-content: start;
+        }
+
+        &__buttons {
+            &.active {
+                flex-direction: column;
+                gap: 0;
+                justify-content: center;
+                align-items: center;
+                z-index: 20;
+            }
+        }
+
+        .social {
+            display: none;
+        }
+
+        .swiper-slide-active {
+            width: 320px;
+        }
+    }
+
+    .main {
+        .news {
+            width: 320px;
+
+            .law {}
+        }
+
+        .law {
+            max-width: 320px;
+
+            .movement {
+                padding: 36px 46px 32px 37px;
+                max-width: 320px;
+                height: 700px;
+
+                &__form {
+                    max-width: 320px;
+                }
+
+                &__input {
+                    max-width: 240px;
+                }
+
+                &__policy {
+                    max-width: 240px;
+                    padding-bottom: 8px;
+                }
+
+                &__btn {
+                    max-width: 240px;
+                    font-size: 22px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__list {
+            gap: 10px;
+            max-width: 320px;
+            flex-wrap: wrap;
+        }
+
+        &__logo {
+            padding: 13px 20px 26px 26px;
+        }
+    }
+}

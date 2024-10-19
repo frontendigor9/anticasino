@@ -1,0 +1,77 @@
+.arrivals {
+    background-color: #f9e100;
+    // padding-bottom: 112px;
+
+    &__title {
+        padding: 65px 0 42px 0;
+        margin-bottom: 0;
+        font-family: "Sports World", sans-serif;
+        font-weight: 400;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+    }
+
+    &__body {
+        background-color: #ffffff;
+        padding-bottom: 50px;
+    }
+
+    &__wrapper {
+        width: 1540px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        display: flex;
+        column-gap: 55px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 264px;
+        height: 349px;
+        margin-top: 90px;
+
+        &_img {
+            border: 1px solid #c4c4c4;
+            width: 264px;
+            height: 264px;
+        }
+
+        &_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 108px;
+        }
+
+        &_title {
+            width: 240px;
+            margin-top: 16px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000;
+        }
+
+        &_price {
+            margin-top: 30px;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000;
+            font-weight: 400;
+            line-height: 87%;
+        }
+    }
+
+    &__feedback {
+        height: 50px;
+        background-color: #f9e100;
+        padding: 16px 0 18px;
+        text-align: center;
+    }
+}

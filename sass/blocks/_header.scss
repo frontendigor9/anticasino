@@ -1,0 +1,160 @@
+.header {
+    background: url('../img/header-bg.jpg');
+
+    // height: 165px;
+    &__free {
+        padding: 17px 0 11px 0;
+        background-color: #f9e100;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        align-items: flex-end;
+    }
+
+    &__global {
+        display: flex;
+        margin-top: 40px;
+        justify-content: flex-end;
+    }
+
+    &__menu_button {
+        display: none;
+        position: relative;
+        bottom: 4px;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        transition: all 3s;
+
+        span {
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            right: 5px;
+            background-color: #fff;
+            transition: all 2s;
+
+            &:nth-child(1) {
+                transform: translateY(-10px);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(10px);
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 40px;
+        margin-top: 32px;
+
+        &_link {
+            &:hover {
+                color: #000;
+                background-color: #f9e100
+            }
+
+            &:active {
+                color: #fff;
+                background: #4f46f6;
+            }
+        }
+    }
+
+    .menu {
+        width: 242px;
+
+
+        &__list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        &__item {
+            list-style-type: none;
+
+
+
+            & a {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 19px;
+                text-align: right;
+                color: #fff;
+
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+
+        &__item {
+            cursor: pointer;
+        }
+    }
+
+    &__logo {
+        width: 159px;
+        height: 165px;
+        background-color: rgb(255, 255, 255);
+        padding: 13px 20px 28px 26px;
+    }
+
+
+
+
+
+    &__buttons_link {
+        font-family: "Sports World", sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        color: #f9e100;
+        text-transform: uppercase;
+    }
+}
+
+.header.open {
+    .header__menu_button {
+        span {
+            &:nth-child(1) {
+                transform: translateY(0) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(0) rotate(-45deg);
+            }
+        }
+    }
+}

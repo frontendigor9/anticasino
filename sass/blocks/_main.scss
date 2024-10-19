@@ -1,0 +1,254 @@
+.main {
+    margin-top: 48px;
+    padding-bottom: 93px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 92px;
+    }
+
+    .swiper-horizontal {
+        width: 100px;
+    }
+
+    .swiper-title1 {
+        font-family: "Sports World", sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    .swiper-subtitle1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #505050;
+    }
+
+    .news {
+        width: 856px;
+
+        &__item {
+            &_title {
+                font-family: "Sports World", sans-serif;
+                font-weight: 400;
+                font-size: 25px;
+                text-transform: uppercase;
+                color: #000;
+            }
+
+            &_subtitle {
+                font-family: "Sports World", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #000;
+            }
+
+            &_descr {
+                display: flex;
+                align-items: end;
+                gap: 33px;
+
+
+
+            }
+
+            &_text {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: #505050;
+            }
+        }
+
+        &__all {
+            margin-top: 79px;
+            display: flex;
+
+            justify-content: flex-end;
+
+            a {
+                display: block;
+                text-align-last: left;
+            }
+        }
+
+        &__button_link {
+            display: flex;
+            text-align-last: left;
+            width: 283px;
+            padding: 16px 24px;
+            background: #f9e100;
+            font-family: "Sports World", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            text-align: center;
+            color: #000;
+
+            &:hover {
+                color: #eee;
+                background-color: #000
+            }
+
+            &:active {
+                color: #fff;
+                background: #4f46f6;
+            }
+        }
+    }
+
+    .law {
+        width: 592px;
+
+        &__title {
+            font-family: "Sports World", sans-serif;
+            font-weight: 400;
+            font-size: 34px;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        &__descr {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: #505050;
+            margin-top: 22px;
+        }
+    }
+
+    .movement {
+        width: 590px;
+        height: 590px;
+        margin-top: 60px;
+        padding: 40px 44px 35px 45px;
+        background: url('../img/movement-bg.jpg');
+
+        &__title {
+            font-family: "Sports World", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        &__subtitle {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        &__form {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__input {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding: 9px 29px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: #8a8a8a;
+            }
+        }
+
+        &__policy {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        &__btn {
+            background: #f9e100;
+            width: 100%;
+            font-family: "Sports World", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #000;
+
+            &:hover {
+                color: #f9e100;
+                background-color: #039705;
+            }
+
+            &:active {
+                color: #fff;
+                background: #69687e;
+            }
+        }
+    }
+
+    .info {
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &__item,
+        &__social {
+            &_title {
+                font-family: "Sports World", sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #000;
+            }
+
+            &_divider {
+                width: 100%;
+                height: 3px;
+                background-color: #000;
+            }
+
+            &_text {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: #505050;
+
+                .btn {
+                    display: block;
+                    text-align: right;
+                    font-family: "Sports World", sans-serif;
+                    padding: 8px 23px;
+                    font-weight: 400;
+                    font-size: 25px;
+                    text-align: center;
+                    color: #fff;
+                    background: #4f46f6;
+                    width: 175px;
+                    height: 50px;
+
+                    &:hover {
+                        color: #000;
+                        background-color: #f9e100
+                    }
+
+                    &:active {
+                        color: #fff;
+                        background: #323144;
+                    }
+                }
+            }
+
+            &_items {
+                margin-top: 7px;
+                display: flex;
+                gap: 25px;
+            }
+        }
+    }
+}

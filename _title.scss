@@ -1,0 +1,92 @@
+.title {
+    font-family: "Helios Extended Cyrillic", sans-serif;
+    color: #000;
+
+    &_fz64 {
+        position: relative;
+        font-weight: 900;
+        font-size: 64px;
+        text-transform: uppercase;
+        line-height: 1;
+        display: inline-block;
+        color: #ff2f00;
+
+        &::before {
+            content: attr(data-text);
+            color: hsl(117, 88%, 22%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            animation: print 3s linear infinite;
+            border-right: 2px solid rgb(255, 213, 0);
+            font-family: "Raleway", sans-serif;
+        }
+
+        @keyframes print {
+
+            0% {
+                width: 0;
+            }
+
+            10% {
+                width: 0;
+            }
+
+            70% {
+                width: 100%;
+            }
+
+            90% {
+                width: 100%;
+            }
+
+            100% {
+                width: 0;
+            }
+
+        }
+    }
+
+    &_fz48 {
+        font-weight: 600;
+        font-size: 48px;
+        text-transform: uppercase;
+        padding-left: 16px;
+    }
+
+    &_fz24 {
+        font-weight: 400;
+        font-size: 24px;
+        color: #75797e;
+
+    }
+
+    &_fz14 {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &_fz16 {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &_fz12 {
+        font-size: 12px;
+        font-weight: 200;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:1000px) {
+    .title {
+        &_fz48 {
+            font-size: 24px;
+        }
+    }
+}

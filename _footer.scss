@@ -1,0 +1,46 @@
+.footer {
+    background: url('../img/footer-bg.jpg');
+    padding: 24px 0 20px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__logo {
+        width: 159px;
+        height: 165px;
+        background-color: #fff;
+        padding: 13px 20px 26px 26px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    &__item {
+        list-style-type: none;
+
+        & a {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 9px;
+
+        & .social__item {
+            cursor: pointer;
+        }
+    }
+}
